@@ -1,10 +1,22 @@
-import { Quantum, define } from '../../references/quantum.js';
-import { select } from '../templates/select.js';
+import { Component } from '../../references/quantum.js';
 
-export class Select extends Quantum {
+export class Select extends Component {
     constructor() {
-        super(select);
+        super();
+
+        // if (event.ctrlKey) {
+        //     elements.forEach(toggleSelection);
+        // } else if (event.shiftKey) {
+        //     // TODO: Add shift selection.
+        // } else {
+        //     queryAll(tree, `[${attribute}]`).forEach(deselect);
+        //     elements.forEach(select);
+        // }
     }
+
+    static template = document.querySelector('#quantum-select');
+
+    static attrbiutes = ['selected'];
 }
 
-define(Select);
+customElements.define('quantum-select', Select);
