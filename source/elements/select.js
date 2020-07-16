@@ -1,4 +1,5 @@
-import { Component } from '../../references/quantum.js';
+import { Component, template } from '../../references/quantum.js';
+import html from '../templates/select.js';
 
 export class Select extends Component {
     constructor() {
@@ -14,7 +15,7 @@ export class Select extends Component {
         // }
     }
 
-    static template = document.querySelector('#quantum-select');
+    static template = template(html);
 
     static attrbiutes = ['selected'];
 }
