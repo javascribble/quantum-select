@@ -1,4 +1,3 @@
-import { Component, template, define } from '../import.js';
 import html from '../templates/select.js';
 
 export class Select extends Component {
