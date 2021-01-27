@@ -1,5 +1,7 @@
 import html from '../templates/select.js';
 
+const { Component, template, define } = quantum;
+
 export class Select extends Component {
     constructor() {
         super();

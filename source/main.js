@@ -1,3 +1,3 @@
 import * as select from './elements/select.js';
 
-Object.assign(window, select);
+Object.assign(quantum, select);
