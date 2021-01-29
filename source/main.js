@@ -1,3 +1,3 @@
-import * as select from './elements/select.js';
+import { Select } from './elements/select.js';
 
-Object.assign(quantum, select);
+Quantum.Select = Select;

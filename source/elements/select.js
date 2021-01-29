@@ -1,8 +1,6 @@
 import html from '../templates/select.js';
 
-const { Component, template, define } = quantum;
-
-export class Select extends Component {
+export class Select extends Quantum {
     constructor() {
         super();
 
@@ -16,9 +14,7 @@ export class Select extends Component {
         // }
     }
 
-    static template = template(html);
-
     static get observedAttributes() { return ['selected']; }
 }
 
-define('quantum-select', Select);
+Select.define('quantum-select', html);
