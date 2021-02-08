@@ -1,3 +1,1 @@
-import { Select } from './elements/select.js';
-
-Quantum.Select = Select;
+import './elements/select.js';
