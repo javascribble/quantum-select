@@ -1,3 +1,5 @@
+import select from '../templates/select.js';
+
 export class Select extends Quantum {
     constructor() {
         super();
@@ -14,3 +16,5 @@ export class Select extends Quantum {
 
     static get observedAttributes() { return ['selected']; }
 }
+
+Select.define('quantum-select', select);
